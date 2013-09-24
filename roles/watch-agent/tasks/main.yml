@@ -1,0 +1,6 @@
+---
+- hosts: all
+  user: root
+  tasks:
+    - name: install munin-node
+      yum: name=munin-node state=installed
