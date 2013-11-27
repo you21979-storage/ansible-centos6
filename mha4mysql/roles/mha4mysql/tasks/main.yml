@@ -13,14 +13,14 @@
 - name: install perl-DBD-MySQL
   yum: name=perl-DBD-MySQL state=installed
 - name: install mha4mysql-node
-  rpm: file=/tmp/${mha4mysql-node} state=installed
+  yum: name=/tmp/${mha4mysql-node} state=installed
 - name: install perl-Parallel-ForkManage
-  rpm: file=/tmp/${perl-Parallel-ForkManager} state=installed
+  yum: name=/tmp/${perl-Parallel-ForkManager} state=installed
 - name: install perl-Params-Validate
-  rpm: file=/tmp/${perl-Params-Validate} state=installed
+  yum: name=/tmp/${perl-Params-Validate} state=installed
 - name: install perl-Log-Dispatch
-  rpm: file=/tmp/${perl-Log-Dispatch} state=installed
+  yum: name=/tmp/${perl-Log-Dispatch} state=installed
 - name: install perl-Config-Tiny
   yum: name=perl-Config-Tiny state=installed
 - name: install mha4mysql-manager
-  rpm: file=/tmp/${mha4mysql-manager} state=installed
+  yum: name=/tmp/${mha4mysql-manager} state=installed
