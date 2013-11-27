@@ -1,0 +1,7 @@
+---
+- name: install mha4mysql
+  hosts: mysql
+  user: root
+
+  roles:
+    - mha4mysql

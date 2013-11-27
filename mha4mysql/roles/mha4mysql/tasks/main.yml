@@ -1,0 +1,26 @@
+- name: download perl-Parallel-ForkManager
+  get_url: url=http://${url_repoforge}/perl-Parallel-ForkManager/${perl-Parallel-ForkManager} dest=/tmp mode=0440
+- name: download perl-Log-Dispatch
+  get_url: url=http://${url_repoforge}/perl-Log-Dispatch/${perl-Log-Dispatch} dest=/tmp mode=0440
+- name: download perl-Params-Validate
+  get_url: url=http://${url_repoforge}/perl-Params-Validate/${perl-Params-Validate} dest=/tmp mode=0440
+- name: download perl-Log-Dispatch
+  get_url: url=http://${url_repoforge}/perl-Log-Dispatch/${perl-Log-Dispatch} dest=/tmp mode=0440
+- name: download mha4mysql-manager
+  get_url: url=https://${url_mysql-master-ha}/files/${mha4mysql-manager} dest=/tmp mode=0440
+- name: download mha4mysql-node
+  get_url: url=https://${url_mysql-master-ha}/files/${mha4mysql-node} dest=/tmp mode=0440
+- name: install perl-DBD-MySQL
+  yum: name=perl-DBD-MySQL state=installed
+- name: install mha4mysql-node
+  rpm: file=/tmp/${mha4mysql-node} state=installed
+- name: install perl-Parallel-ForkManage
+  rpm: file=/tmp/${perl-Parallel-ForkManager} state=installed
+- name: install perl-Params-Validate
+  rpm: file=/tmp/${perl-Params-Validate} state=installed
+- name: install perl-Log-Dispatch
+  rpm: file=/tmp/${perl-Log-Dispatch} state=installed
+- name: install perl-Config-Tiny
+  yum: name=perl-Config-Tiny state=installed
+- name: install mha4mysql-manager
+  rpm: file=/tmp/${mha4mysql-manager} state=installed

@@ -1,0 +1,8 @@
+url_repoforge: pkgs.repoforge.org
+url_mysql-master-ha: mysql-master-ha.googlecode.com
+perl-Parallel-ForkManager: perl-Parallel-ForkManager-0.7.5-2.2.el6.rf.noarch.rpm
+perl-Log-Dispatch: perl-Log-Dispatch-2.26-1.el6.rf.noarch.rpm
+perl-Params-Validate: perl-Params-Validate-0.95-1.el6.rfx.x86_64.rpm
+perl-Log-Dispatch: perl-Log-Dispatch-2.26-1.el6.rf.noarch.rpm
+mha4mysql-node: mha4mysql-node-0.54-0.el6.noarch.rpm
+mha4mysql-manager: mha4mysql-manager-0.55-0.el6.noarch.rpm
