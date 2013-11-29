@@ -1,0 +1,6 @@
+---
+- name: install nodejs
+  hosts: app
+  user: root
+  roles:
+    - nodejs
