@@ -1,0 +1,15 @@
+---
+- name: install mysql-community-client
+  hosts: app
+  user: root
+
+  roles:
+    - mysql-community-repos
+    - mysql-community-client
+- name: install mysql-community-server
+  hosts: mysql
+  user: root
+
+  roles:
+    - mysql-community-repos
+    - mysql-community-server
