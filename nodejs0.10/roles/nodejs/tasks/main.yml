@@ -1,0 +1,7 @@
+- name: install nodejs
+  yum: name=$item state=installed
+  with_items:
+    - https://github.com/you21979-storage/centos6-rpm/raw/master/nodejs0.10/nodejs-0.10.22-1.el6.x86_64.rpm 
+    - https://github.com/you21979-storage/centos6-rpm/raw/master/nodejs0.10/nodejs-binary-0.10.22-1.el6.x86_64.rpm
+    - https://github.com/you21979-storage/centos6-rpm/raw/master/nodejs0.10/nodejs-debuginfo-0.10.22-1.el6.x86_64.rpm
+    - https://github.com/you21979-storage/centos6-rpm/raw/master/nodejs0.10/nodejs-npm-0.10.22-1.el6.x86_64.rpm
