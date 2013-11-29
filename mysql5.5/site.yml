@@ -1,0 +1,15 @@
+---
+- name: install mysql-client
+  hosts: app
+  user: root
+
+  roles:
+    - remi-repos
+    - mysql-client
+- name: install mysql-server
+  hosts: mysql
+  user: root
+
+  roles:
+    - remi-repos
+    - mysql-server
