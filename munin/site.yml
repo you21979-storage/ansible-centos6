@@ -1,0 +1,14 @@
+---
+- name: install munin-node
+  hosts: munin-node
+  user: root
+
+  roles:
+    - epel
+    - munin-node
+#- name: install munin-host
+#  hosts: munin-host
+#  user: root
+#
+#  roles:
+#    - munin-host

@@ -1,0 +1,2 @@
+- name: install munin-node
+  yum: name=munin-node state=installed
