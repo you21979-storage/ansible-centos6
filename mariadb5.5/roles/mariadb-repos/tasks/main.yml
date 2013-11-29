@@ -1,0 +1,2 @@
+- name: add mariadb repository
+  copy: src=mariadb.repo dest=/etc/yum.repos.d/mariadb.repo mode=0644
