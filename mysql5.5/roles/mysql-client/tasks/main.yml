@@ -1,2 +1,2 @@
 - name: install mysql-client
-  yum: name=mysql-client state=installed
+  yum: name=mysql state=installed enablerepo=remi

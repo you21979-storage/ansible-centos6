@@ -2,14 +2,14 @@
 - name: install mysql-client
   hosts: app
   user: root
-
   roles:
+    - epel-repos
     - remi-repos
     - mysql-client
 - name: install mysql-server
   hosts: mysql
   user: root
-
   roles:
+    - epel-repos
     - remi-repos
     - mysql-server

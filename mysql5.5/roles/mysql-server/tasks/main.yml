@@ -1,2 +1,2 @@
 - name: install mysql-server
-  yum: name=mysql-server state=installed
+  yum: name=mysql-server state=installed enablerepo=remi
