@@ -1,2 +1,2 @@
 - name: add mysql-community repository
-  yum: name=http://repo.mysql.com/mysql-community-release-el6-3.noarch.rpm state=installed
+  yum: name=http://repo.mysql.com/mysql-community-release-el6-5.noarch.rpm state=installed
